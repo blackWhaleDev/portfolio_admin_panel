@@ -1,11 +1,11 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/home/panel_center/panel_center_page.dart';
+import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/home/panel_right/panel_right_page.dart';
 import 'package:portfolio_admin_panel/widgets/app_bar/app_bar_widget.dart';
 import 'package:portfolio_admin_panel/constants.dart';
 import 'package:portfolio_admin_panel/widgets/drawer/drawer_page.dart';
-import 'package:portfolio_admin_panel/pages/home/panel_center/panel_center_page.dart';
-import 'package:portfolio_admin_panel/pages/home/panel_left/panel_left_page.dart';
-import 'package:portfolio_admin_panel/pages/home/panel_right/panel_right_page.dart';
+import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/home/panel_left/panel_left_page.dart';
 import 'package:portfolio_admin_panel/responsive_layout.dart';
 
 class WidgetTree extends StatefulWidget {
