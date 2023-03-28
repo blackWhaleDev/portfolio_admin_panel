@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_admin_panel/constants.dart';
-import 'package:portfolio_admin_panel/panel_left/circle_graph.dart';
-import 'package:portfolio_admin_panel/panel_left/curved_chart.dart';
+import 'package:portfolio_admin_panel/pages/home/panel_left/circle_graph.dart';
+import 'package:portfolio_admin_panel/pages/home/panel_left/curved_chart.dart';
 import 'package:portfolio_admin_panel/responsive_layout.dart';
 
 class Todo {
