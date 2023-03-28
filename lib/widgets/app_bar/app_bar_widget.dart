@@ -19,7 +19,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
         children: [
           if (ResponsiveLayout.isComputer(context))
             Container(
-              margin: EdgeInsets.all(Constants.kPadding),
+              margin: const EdgeInsets.all(Constants.kPadding),
               height: double.infinity,
               decoration: const BoxDecoration(boxShadow: [
                 BoxShadow(

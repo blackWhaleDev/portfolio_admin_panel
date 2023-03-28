@@ -44,9 +44,9 @@ class _PanelRightPageState extends State<PanelRightPage> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(50),
                 ),
-                child: Container(
+                child: const SizedBox(
                   width: double.infinity,
-                  child: const ListTile(
+                  child: ListTile(
                     //leading: Icon(Icons.monetization_on),
                     title: Text(
                       "Net Revenue",
@@ -84,7 +84,7 @@ class _PanelRightPageState extends State<PanelRightPage> {
                         (index) => SwitchListTile.adaptive(
                       title: Text(
                         _products[index].name,
-                        style: TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.white),
                       ),
                       value: _products[index].enable,
                       onChanged: (newValue) {

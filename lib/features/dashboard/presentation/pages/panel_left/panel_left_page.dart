@@ -57,9 +57,9 @@ class _PanelLeftPageState extends State<PanelLeftPage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50),
                     ),
-                    child: Container(
+                    child: const SizedBox(
                       width: double.infinity,
-                      child: const ListTile(
+                      child: ListTile(
                         //leading: Icon(Icons.shopping_basket),
                         title: Text(
                           "Products Sold",
@@ -98,7 +98,7 @@ class _PanelLeftPageState extends State<PanelLeftPage> {
                             (index) => CheckboxListTile(
                           title: Text(
                             _todos[index].name,
-                            style: TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white),
                           ),
                           value: _todos[index].enable,
                           onChanged: (newValue) {

@@ -11,7 +11,7 @@ class Person {
 class PanelCenterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    List<Person> _persons = [
+    List<Person> persons = [
       Person(name: "Theia Bowen", color: const Color(0xfff8b250)),
       Person(name: "Fariha Odling", color: const Color(0xffff5182)),
       Person(name: "Viola Willis", color: const Color(0xff0293ee)),
@@ -37,9 +37,9 @@ class PanelCenterPage extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(50),
               ),
-              child: Container(
+              child: const SizedBox(
                 width: double.infinity,
-                child: const ListTile(
+                child: ListTile(
                   //leading: Icon(Icons.sell),
                   title: Text(
                     "Products Available",
@@ -73,18 +73,18 @@ class PanelCenterPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20)),
               child: Column(
                 children: List.generate(
-                  _persons.length,
+                  persons.length,
                       (index) => ListTile(
                     leading: CircleAvatar(
                       radius: 15,
-                      backgroundColor: _persons[index].color,
+                      backgroundColor: persons[index].color,
                       child: Text(
-                        _persons[index].name.substring(0, 1),
+                        persons[index].name.substring(0, 1),
                         style: const TextStyle(color: Colors.white),
                       ),
                     ),
                     title: Text(
-                      _persons[index].name,
+                      persons[index].name,
                       style: const TextStyle(color: Colors.white),
                     ),
                     trailing: IconButton(

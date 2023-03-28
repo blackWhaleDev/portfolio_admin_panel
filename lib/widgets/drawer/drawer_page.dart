@@ -26,7 +26,7 @@ class _DrawerPageState extends State<DrawerPage> {
     return Drawer(
       child: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(Constants.kPadding),
+          padding: const EdgeInsets.all(Constants.kPadding),
           child: Column(
             children: [
               ListTile(
