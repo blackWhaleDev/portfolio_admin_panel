@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:portfolio_admin_panel/core/constants/palette.dart';
 import 'package:portfolio_admin_panel/core/constants/sizes.dart';
+import 'package:portfolio_admin_panel/widgets/cards/custom_card.dart';
 
 class LineChartSample2 extends StatefulWidget {
   const LineChartSample2({super.key});
@@ -25,10 +26,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
           top: AppSizes.kPadding,
           bottom: AppSizes.kPadding,
           right: AppSizes.kPadding / 2),
-      child: Card(
-        color: AppColors.purpleLight,
-        elevation: 3,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      child: CustomCard(
         child: Stack(
           children: <Widget>[
             AspectRatio(

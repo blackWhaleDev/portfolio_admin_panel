@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_admin_panel/core/constants/palette.dart';
 import 'package:portfolio_admin_panel/core/constants/sizes.dart';
 import 'package:portfolio_admin_panel/utils/extensions/color_extensions.dart';
+import 'package:portfolio_admin_panel/widgets/cards/custom_card.dart';
 
 class BarChartSample2 extends StatefulWidget {
   BarChartSample2({super.key});
@@ -57,11 +58,7 @@ class BarChartSample2State extends State<BarChartSample2> {
           left: AppSizes.kPadding / 2),
       child: AspectRatio(
         aspectRatio: 1,
-        child: Card(
-          elevation: 3,
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(4)),
-          color: AppColors.purpleLight,
+        child: CustomCard(
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Column(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_admin_panel/core/constants/palette.dart';
 import 'package:portfolio_admin_panel/core/constants/sizes.dart';
 import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/panel_right/graph.dart';
+import 'package:portfolio_admin_panel/widgets/cards/custom_card.dart';
 
 class Product {
   String name;
@@ -39,9 +40,7 @@ class _PanelRightPageState extends State<PanelRightPage> {
                   right: AppSizes.kPadding / 2,
                   top: AppSizes.kPadding / 2,
                   left: AppSizes.kPadding / 2),
-              child: Card(
-                color: AppColors.purpleLight,
-                elevation: 3,
+              child: CustomCard(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(50),
                 ),
@@ -74,11 +73,7 @@ class _PanelRightPageState extends State<PanelRightPage> {
                   bottom: AppSizes.kPadding,
                   top: AppSizes.kPadding,
                   left: AppSizes.kPadding / 2),
-              child: Card(
-                color: AppColors.purpleLight,
-                elevation: 3,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
+              child: CustomCard(
                 child: Column(
                   children: List.generate(
                     _products.length,
