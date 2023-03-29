@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_admin_panel/constants.dart';
+import 'package:portfolio_admin_panel/core/constants/palette.dart';
+import 'package:portfolio_admin_panel/core/constants/sizes.dart';
 import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/panel_right/graph.dart';
 
 class Product {
@@ -35,11 +36,11 @@ class _PanelRightPageState extends State<PanelRightPage> {
           children: [
             Padding(
               padding: const EdgeInsets.only(
-                  right: Constants.kPadding / 2,
-                  top: Constants.kPadding / 2,
-                  left: Constants.kPadding / 2),
+                  right: AppSizes.kPadding / 2,
+                  top: AppSizes.kPadding / 2,
+                  left: AppSizes.kPadding / 2),
               child: Card(
-                color: Constants.purpleLight,
+                color: AppColors.purpleLight,
                 elevation: 3,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(50),
@@ -69,12 +70,12 @@ class _PanelRightPageState extends State<PanelRightPage> {
             const LineChartSample1(),
             Padding(
               padding: const EdgeInsets.only(
-                  right: Constants.kPadding / 2,
-                  bottom: Constants.kPadding,
-                  top: Constants.kPadding,
-                  left: Constants.kPadding / 2),
+                  right: AppSizes.kPadding / 2,
+                  bottom: AppSizes.kPadding,
+                  top: AppSizes.kPadding,
+                  left: AppSizes.kPadding / 2),
               child: Card(
-                color: Constants.purpleLight,
+                color: AppColors.purpleLight,
                 elevation: 3,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),

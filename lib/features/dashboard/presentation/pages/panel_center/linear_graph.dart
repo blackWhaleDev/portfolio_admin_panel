@@ -1,12 +1,13 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio_admin_panel/constants.dart';
+import 'package:portfolio_admin_panel/core/constants/palette.dart';
+import 'package:portfolio_admin_panel/core/constants/sizes.dart';
 import 'package:portfolio_admin_panel/utils/extensions/color_extensions.dart';
 
 class BarChartSample2 extends StatefulWidget {
   BarChartSample2({super.key});
-  final Color leftBarColor = Constants.greenLight;
-  final Color rightBarColor = Constants.redLight;
+  final Color leftBarColor = AppColors.greenLight;
+  final Color rightBarColor = AppColors.redLight;
   final Color avgColor =
   AppColors.contentColorOrange.avg(AppColors.contentColorRed);
   @override
@@ -51,16 +52,16 @@ class BarChartSample2State extends State<BarChartSample2> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-          right: Constants.kPadding / 2,
-          top: Constants.kPadding,
-          left: Constants.kPadding / 2),
+          right: AppSizes.kPadding / 2,
+          top: AppSizes.kPadding,
+          left: AppSizes.kPadding / 2),
       child: AspectRatio(
         aspectRatio: 1,
         child: Card(
           elevation: 3,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(4)),
-          color: Constants.purpleLight,
+          color: AppColors.purpleLight,
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Column(

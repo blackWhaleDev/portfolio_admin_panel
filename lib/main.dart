@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_admin_panel/constants.dart';
+import 'package:portfolio_admin_panel/core/constants/palette.dart';
 import 'package:portfolio_admin_panel/widget_tree.dart';
 
 void main() {
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Alireza Alizade Portfolio',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Constants.purpleDark,
-        canvasColor: Constants.purpleLight
+        scaffoldBackgroundColor: AppColors.purpleDark,
+        canvasColor: AppColors.purpleLight
       ),
       home: const WidgetTree(),
     );

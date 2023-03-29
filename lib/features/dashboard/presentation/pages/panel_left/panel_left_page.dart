@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_admin_panel/constants.dart';
+import 'package:portfolio_admin_panel/core/constants/palette.dart';
+import 'package:portfolio_admin_panel/core/constants/sizes.dart';
 import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/panel_left/circle_graph.dart';
 import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/panel_left/curved_chart.dart';
 import 'package:portfolio_admin_panel/responsive_layout.dart';
@@ -32,11 +33,11 @@ class _PanelLeftPageState extends State<PanelLeftPage> {
         children: [
           if (ResponsiveLayout.isComputer(context))
             Container(
-              color: Constants.purpleLight,
+              color: AppColors.purpleLight,
               width: 50,
               child: Container(
                 decoration: const BoxDecoration(
-                  color: Constants.purpleDark,
+                  color: AppColors.purpleDark,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(50),
                   ),
@@ -48,11 +49,11 @@ class _PanelLeftPageState extends State<PanelLeftPage> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(
-                      left: Constants.kPadding / 2,
-                      top: Constants.kPadding / 2,
-                      right: Constants.kPadding / 2),
+                      left: AppSizes.kPadding / 2,
+                      top: AppSizes.kPadding / 2,
+                      right: AppSizes.kPadding / 2),
                   child: Card(
-                    color: Constants.purpleLight,
+                    color: AppColors.purpleLight,
                     elevation: 3,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50),
@@ -83,12 +84,12 @@ class _PanelLeftPageState extends State<PanelLeftPage> {
                 const PieChartSample2(),
                 Padding(
                   padding: const EdgeInsets.only(
-                      right: Constants.kPadding / 2,
-                      bottom: Constants.kPadding,
-                      top: Constants.kPadding /2,
-                      left: Constants.kPadding / 2),
+                      right: AppSizes.kPadding / 2,
+                      bottom: AppSizes.kPadding,
+                      top: AppSizes.kPadding /2,
+                      left: AppSizes.kPadding / 2),
                   child: Card(
-                    color: Constants.purpleLight,
+                    color: AppColors.purpleLight,
                     elevation: 3,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),

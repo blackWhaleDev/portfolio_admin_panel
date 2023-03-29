@@ -1,17 +1,5 @@
 import 'package:flutter/material.dart';
 
-class Constants {
-  static const double kPadding = 10.0;
-  static const Color purpleLight = Color(0XFF1e224c);
-  static const Color purpleDark = Color(0XFF0d193e);
-  static const Color orangeDark = Color(0XFFec8d2f);
-  static const Color orangeLight = Color(0XFFF8b250);
-  static const Color redDark = Color(0XFFF44336);
-  static const Color redLight = Color(0XFFFF5182);
-  static const Color blueLight = Color(0XFF0293ee);
-  static const Color greenLight = Color(0XFF13d38e);
-}
-
 class AppColors {
   static const Color primary = contentColorCyan;
   static const Color menuBackground = Color(0xFF090912);
@@ -34,4 +22,14 @@ class AppColors {
   static const Color contentColorPink = Color(0xFFFF3AF2);
   static const Color contentColorRed = Color(0xFFE80054);
   static const Color contentColorCyan = Color(0xFF50E4FF);
+
+  static const double kPadding = 10.0;
+  static const Color purpleLight = Color(0XFF1e224c);
+  static const Color purpleDark = Color(0XFF0d193e);
+  static const Color orangeDark = Color(0XFFec8d2f);
+  static const Color orangeLight = Color(0XFFF8b250);
+  static const Color redDark = Color(0XFFF44336);
+  static const Color redLight = Color(0XFFFF5182);
+  static const Color blueLight = Color(0XFF0293ee);
+  static const Color greenLight = Color(0XFF13d38e);
 }

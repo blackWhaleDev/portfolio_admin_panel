@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_admin_panel/constants.dart';
+import 'package:portfolio_admin_panel/core/constants/palette.dart';
+import 'package:portfolio_admin_panel/core/constants/sizes.dart';
 import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/panel_center/linear_graph.dart';
 
 class Person {
@@ -28,11 +29,11 @@ class PanelCenterPage extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(
-                top: Constants.kPadding / 2,
-                right: Constants.kPadding / 2,
-                left: Constants.kPadding / 2),
+                top: AppSizes.kPadding / 2,
+                right: AppSizes.kPadding / 2,
+                left: AppSizes.kPadding / 2),
             child: Card(
-              color: Constants.purpleLight,
+              color: AppColors.purpleLight,
               elevation: 3,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(50),
@@ -62,12 +63,12 @@ class PanelCenterPage extends StatelessWidget {
           BarChartSample2(),
           Padding(
             padding: const EdgeInsets.only(
-                top: Constants.kPadding,
-                left: Constants.kPadding / 2,
-                right: Constants.kPadding / 2,
-                bottom: Constants.kPadding),
+                top: AppSizes.kPadding,
+                left: AppSizes.kPadding / 2,
+                right: AppSizes.kPadding / 2,
+                bottom: AppSizes.kPadding),
             child: Card(
-              color: Constants.purpleLight,
+              color: AppColors.purpleLight,
               elevation: 3,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),

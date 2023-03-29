@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_admin_panel/constants.dart';
+import 'package:portfolio_admin_panel/core/constants/palette.dart';
+import 'package:portfolio_admin_panel/core/constants/sizes.dart';
 import 'package:portfolio_admin_panel/responsive_layout.dart';
 
 class DrawerPage extends StatefulWidget {
@@ -26,7 +27,7 @@ class _DrawerPageState extends State<DrawerPage> {
     return Drawer(
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(Constants.kPadding),
+          padding: const EdgeInsets.all(AppSizes.kPadding),
           child: Column(
             children: [
               ListTile(
@@ -46,8 +47,8 @@ class _DrawerPageState extends State<DrawerPage> {
                     decoration: index == _currentIndex ? BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       gradient: LinearGradient(colors: [
-                        Constants.redDark.withOpacity(0.9),
-                        Constants.orangeDark.withOpacity(0.9),
+                        AppColors.redDark.withOpacity(0.9),
+                        AppColors.orangeDark.withOpacity(0.9),
                       ])
                     ) : null,
                     child: ListTile(
@@ -58,7 +59,7 @@ class _DrawerPageState extends State<DrawerPage> {
                         ),
                       ),
                       leading: Padding(
-                        padding: const EdgeInsets.all(Constants.kPadding),
+                        padding: const EdgeInsets.all(AppSizes.kPadding),
                         child: Icon(_buttonNames[index].icon, color: Colors.white,),
                       ),
                       onTap: (){

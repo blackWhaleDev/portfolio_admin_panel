@@ -1,6 +1,8 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio_admin_panel/constants.dart';
+import 'package:portfolio_admin_panel/core/constants/palette.dart';
+import 'package:portfolio_admin_panel/core/constants/sizes.dart';
+
 
 class Indicator extends StatelessWidget {
   const Indicator({
@@ -60,13 +62,13 @@ class PieChart2State extends State {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-          left: Constants.kPadding / 2,
-          bottom: Constants.kPadding / 2,
-          right: Constants.kPadding / 2),
+          left: AppSizes.kPadding / 2,
+          bottom: AppSizes.kPadding / 2,
+          right: AppSizes.kPadding / 2),
       child: Card(
         elevation: 3,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        color: Constants.purpleLight,
+        color: AppColors.purpleLight,
         child: Row(
           children: <Widget>[
             const SizedBox(

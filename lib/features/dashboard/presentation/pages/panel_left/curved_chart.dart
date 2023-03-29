@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
-import 'package:portfolio_admin_panel/constants.dart';
+import 'package:portfolio_admin_panel/core/constants/palette.dart';
+import 'package:portfolio_admin_panel/core/constants/sizes.dart';
 
 class LineChartSample2 extends StatefulWidget {
   const LineChartSample2({super.key});
@@ -20,12 +21,12 @@ class _LineChartSample2State extends State<LineChartSample2> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-          left: Constants.kPadding / 2,
-          top: Constants.kPadding,
-          bottom: Constants.kPadding,
-          right: Constants.kPadding / 2),
+          left: AppSizes.kPadding / 2,
+          top: AppSizes.kPadding,
+          bottom: AppSizes.kPadding,
+          right: AppSizes.kPadding / 2),
       child: Card(
-        color: Constants.purpleLight,
+        color: AppColors.purpleLight,
         elevation: 3,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         child: Stack(

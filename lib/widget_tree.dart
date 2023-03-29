@@ -4,7 +4,7 @@ import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/pane
 import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/panel_left/panel_left_page.dart';
 import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/panel_right/panel_right_page.dart';
 import 'package:portfolio_admin_panel/widgets/app_bar/app_bar_widget.dart';
-import 'package:portfolio_admin_panel/constants.dart';
+import 'package:portfolio_admin_panel/core/constants/palette.dart';
 import 'package:portfolio_admin_panel/widgets/drawer/drawer_page.dart';
 import 'package:portfolio_admin_panel/responsive_layout.dart';
 
@@ -65,7 +65,7 @@ class _WidgetTreeState extends State<WidgetTree> {
       bottomNavigationBar: ResponsiveLayout.isPhone(context)
           ? CurvedNavigationBar(
         index: currentIndex,
-        backgroundColor: Constants.purpleDark,
+        backgroundColor: AppColors.purpleDark,
         items: _icons,
         onTap: (index) {
           setState(() {
