@@ -24,10 +24,6 @@ class _HomeState extends State<Home> {
     const Icon(Icons.list, size: 30),
     const Icon(Icons.compare_arrows, size: 30),
   ];
-  final List<Widget> _tabletIcons = [
-    const Icon(Icons.add, size: 30),
-    const Icon(Icons.list, size: 30),
-  ];
   final outerController = ScrollController();
   final innerController = ScrollController();
   @override
