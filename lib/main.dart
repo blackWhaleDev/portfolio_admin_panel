@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_admin_panel/core/constants/palette.dart';
-import 'package:portfolio_admin_panel/widget_tree.dart';
+import 'package:portfolio_admin_panel/features/dashboard/presentation/pages/home.dart';
+import 'package:flutter/gestures.dart';
+
+class MyCustomScrollBehavior extends MaterialScrollBehavior {
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+    PointerDeviceKind.touch,
+    PointerDeviceKind.mouse,
+    PointerDeviceKind.stylus,
+    PointerDeviceKind.unknown,
+  };
+}
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: MyCustomScrollBehavior(),
       debugShowCheckedModeBanner: false,
       title: 'Alireza Alizade Portfolio',
       theme: ThemeData(
@@ -20,7 +32,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.purpleDark,
         canvasColor: AppColors.purpleLight
       ),
-      home: const WidgetTree(),
+      home: const Home(),
     );
   }
 }
