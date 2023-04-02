@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 class ResponsiveLayout extends StatefulWidget {
-  final Widget tiny;
-  final Widget phone;
-  final Widget tablet;
-  final Widget largeTablet;
-  final Widget computer;
+  final Widget? tiny;
+  final Widget? phone;
+  final Widget? tablet;
+  final Widget? largeTablet;
+  final Widget? computer;
   final Widget? defaultWidget;
   const ResponsiveLayout({
     Key? key,
-    required this.tiny,
-    required this.phone,
-    required this.tablet,
-    required this.largeTablet,
-    required this.computer,
+    this.tiny,
+    this.phone,
+    this.tablet,
+    this.largeTablet,
+    this.computer,
     this.defaultWidget,
   }) : super(key: key);
 

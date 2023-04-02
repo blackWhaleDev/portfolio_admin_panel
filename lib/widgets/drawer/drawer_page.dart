@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_admin_panel/core/constants/palette.dart';
 import 'package:portfolio_admin_panel/core/constants/sizes.dart';
+import 'package:portfolio_admin_panel/features/users/presentation/pages/users.dart';
 import 'package:portfolio_admin_panel/responsive_layout.dart';
 
 class DrawerPage extends StatefulWidget {
@@ -12,13 +13,15 @@ class DrawerPage extends StatefulWidget {
 class ButtonsInfo {
   String title;
   IconData icon;
-  ButtonsInfo({required this.title, required this.icon,});
+  Function action;
+  ButtonsInfo({required this.title, required this.icon, required this.action});
 }
 int _currentIndex = 0;
 List<ButtonsInfo> _buttonNames = [
-  ButtonsInfo(title: "Home", icon: Icons.home),
-  ButtonsInfo(title: "Setting", icon: Icons.settings),
-  ButtonsInfo(title: "Contacts", icon: Icons.contact_phone_rounded),
+  ButtonsInfo(title: "Home", icon: Icons.home, action: (context) => {}),
+  ButtonsInfo(title: "Users", icon: Icons.man, action: (context) => Navigator.push(context,
+      MaterialPageRoute(builder: (context) => const Users()))),
+  ButtonsInfo(title: "Contacts", icon: Icons.contact_phone_rounded, action: (context) => {}),
 ];
 
 class _DrawerPageState extends State<DrawerPage> {
@@ -66,6 +69,7 @@ class _DrawerPageState extends State<DrawerPage> {
                         setState(() {
                           _currentIndex = index;
                         });
+                        _buttonNames[index].action(context);
                       },
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)
